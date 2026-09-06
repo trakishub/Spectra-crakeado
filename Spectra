@@ -19,17 +19,17 @@ v4(LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait())
 LocalPlayer.CharacterAdded:Connect(v4)
 local v5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/djhehdhdjdjdjdbfb-sys/Spectra-tudo-obf/refs/heads/main/obfuscated_script-1784407255121.lua.txt"))()
 t1[7] = v5:MakeWindow({
-	Title = " Trakis HUB | Brookhaven RP 🏡",
-	SubTitle = "炎 by cafezin and vitin | version secret",
-	Logo = "rbxassetid://82831701660755",
+	Title = " Spectra HUB | Brookhaven RP 🏡",
+	SubTitle = "炎 by assure | version hub 3.7.0.8",
+	Logo = "rbxassetid://15464429993",
 	TitleSize = 18,
-	SaveFolder = "trakis hub"
+	SaveFolder = "Spectra hub"
 })
 local v6 = t1[7]
 local uDim2 = UDim2.new(0, 40, 0, 40)
 local Fit = Enum.ScaleType.Fit
 local t2 = {
-	Image = "rbxassetid://82831701660755",
+	Image = "rbxassetid://116857504291644",
 	BackgroundTransparency = 0,
 	Size = uDim2,
 	ScaleType = Fit
@@ -43,14 +43,14 @@ AddMinimizeButton(v6, {
 	Corner = t3
 })
 t1[7]:Dialog({
-	Title = "Welcome to Trakis hub",
+	Title = "Welcome to Spectra Hub",
 	Text = "Join our Discord to stay updated with news, updates, and community events!",
 	Options = {
 		{
 			"Discord",
 			function()
-    setclipboard(" VERSION SECRET")
-    Library:Notify(10709806740, "VERSION SECRET", 5)
+    setclipboard("https://discord.gg/vsKDhkJf8D")
+    Library:Notify(10709806740, "Discord link copied to clipboard!", 5)
 end
 		},
 		{
