@@ -17,8 +17,10 @@ local function v4(p1)
 end
 v4(LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait())
 LocalPlayer.CharacterAdded:Connect(v4)
-local v5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/djhehdhdjdjdjdbfb-sys/Spectra-tudo-obf/refs/heads/main/obfuscated_script-1784407255121.lua.txt"))()
-t1[7] = v5:MakeWindow({
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/toparemos/Library/refs/heads/main/library.lua"))()
+local Window = redzlib:MakeWindow({
+
+
 	Title = " Spectra HUB | Brookhaven RP 🏡",
 	SubTitle = "炎 by assure | version hub 3.7.0.8",
 	Logo = "rbxassetid://15464429993",
