@@ -1,26 +1,7 @@
--- This file was generated at discord.gg/syncrypt
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/silvaahub/anonymus-hub-/refs/heads/main/Library%20Amarela.txt"))()
+workspace.FallenPartsDestroyHeight = -math.huge
 
-local t1 = {}
-local v2 = unpack or table.unpack
-t1[1] = game:GetService("Players")
-game:GetService("ReplicatedStorage")
-t1[2] = game:GetService("Workspace")
-t1[3] = game:GetService("RunService")
-local LocalPlayer = t1[1].LocalPlayer
-t1[4] = nil
-t1[5] = nil
-t1[6] = nil
-local function v4(p1)
-    t1[4] = p1
-    t1[5] = p1:WaitForChild("Humanoid")
-    t1[6] = p1:WaitForChild("HumanoidRootPart")
-end
-v4(LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait())
-LocalPlayer.CharacterAdded:Connect(v4)
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/toparemos/Library/refs/heads/main/library.lua"))()
-local Window = redzlib:MakeWindow({
-
-
+local Window = Library:MakeWindow({
 	Title = " Spectra HUB | Brookhaven RP 🏡",
 	SubTitle = "炎 by assure | version hub 3.7.0.8",
 	Logo = "rbxassetid://15464429993",
