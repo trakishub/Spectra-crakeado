@@ -31,37 +31,6 @@ Window:AddMinimizeButton({
     },
 })
 
-------InfoTab
-local InfoTab = Window:MakeTab({ Title = "Info", Icon = "rbxassetid://15309138473" })
-
-local startTime = os.time()
-
-local function getUptime()
-    local seconds = os.difftime(os.time(), startTime)
-    local hours = math.floor(seconds / 3600)
-    local mins = math.floor((seconds % 3600) / 60)
-    local secs = seconds % 60
-    return string.format("%02dh %02dm %02ds", hours, mins, secs)
-end
-
-local currentDate = os.date("%d/%m/%Y")
-local executor = identifyexecutor()
-
-InfoTab:AddSection({ "Script Information" })
-InfoTab:AddParagraph({ "Owner / Developer:", "Zyronis" })
-InfoTab:AddParagraph({ "Collaboration:", "lolytadev & Rick/Shelby" })
-InfoTab:AddParagraph({ "You are using:", "DeathWish Hub Brookhaven" })
-InfoTab:AddParagraph({ "Your executor:", executor })
-InfoTab:AddParagraph({ "Date:", currentDate })
-local uptimePara = InfoTab:AddParagraph({ "Uptime:", getUptime() })
-
-task.spawn(function()
-    while task.wait(1) do
-        uptimePara:Set({ "Uptime:", getUptime() })
-    end
-end)
-		}
-	}
 })
 local v12 = t1[7]:MakeTab({
 	"Configs",
