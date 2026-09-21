@@ -1,36 +1,64 @@
-local Players = game:GetService("Players")
-local TweenService = game:GetService("TweenService")
-local CoreGui = game:GetService("CoreGui")
-local StarterGui = game:GetService("StarterGui")
-local RunService = game:GetService("RunService")
-local Players = game:GetService("Players")
-local CoreGui = game:GetService("CoreGui")
-local HttpService = game:GetService("HttpService")
-local LogService = game:GetService("LogService")
 
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyroniszx/Zyro/refs/heads/main/Main.txt"))()
-
-local Window = redzlib:MakeWindow({
-
-  Title = "DeathWish Hub | V1.5",
-
-  SubTitle = "by Zyronis",
-
-  SaveFolder = "DeathWish_Hub"
-
+local t1 = {}
+local v2 = unpack or table.unpack
+t1[1] = game:GetService("Players")
+game:GetService("ReplicatedStorage")
+t1[2] = game:GetService("Workspace")
+t1[3] = game:GetService("RunService")
+local LocalPlayer = t1[1].LocalPlayer
+t1[4] = nil
+t1[5] = nil
+t1[6] = nil
+local function v4(p1)
+    t1[4] = p1
+    t1[5] = p1:WaitForChild("Humanoid")
+    t1[6] = p1:WaitForChild("HumanoidRootPart")
+end
+v4(LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait())
+LocalPlayer.CharacterAdded:Connect(v4)
+local v5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/djhehdhdjdjdjdbfb-sys/Spectra-tudo-obf/refs/heads/main/obfuscated_script-1784407255121.lua.txt"))()
+t1[7] = v5:MakeWindow({
+	Title = " Spectra HUB | Brookhaven RP 🏡",
+	SubTitle = "炎 by assure | version hub 3.7.0.8",
+	Logo = "rbxassetid://15464429993",
+	TitleSize = 18,
+	SaveFolder = "Spectra hub"
 })
-
-Window:AddMinimizeButton({
-    Button = { 
-        Image = "rbxassetid://118409689192218", 
-        BackgroundTransparency = 1, 
-        Size = UDim2.new(0, 65, 0, 65)
-    },
-    Corner = { 
-        CornerRadius = UDim.new(0, 100)
-    },
+local v6 = t1[7]
+local uDim2 = UDim2.new(0, 40, 0, 40)
+local Fit = Enum.ScaleType.Fit
+local t2 = {
+	Image = "rbxassetid://116857504291644",
+	BackgroundTransparency = 0,
+	Size = uDim2,
+	ScaleType = Fit
+}
+local AddMinimizeButton = v6.AddMinimizeButton
+local t3 = {
+	CornerRadius = UDim.new(35, 1)
+}
+AddMinimizeButton(v6, {
+	Button = t2,
+	Corner = t3
 })
-
+t1[7]:Dialog({
+	Title = "Welcome to Spectra Hub",
+	Text = "Join our Discord to stay updated with news, updates, and community events!",
+	Options = {
+		{
+			"Discord",
+			function()
+    setclipboard("https://discord.gg/vsKDhkJf8D")
+    Library:Notify(10709806740, "Discord link copied to clipboard!", 5)
+end
+		},
+		{
+			"Close",
+			function()
+    Dialog:Destroy()
+end
+		}
+	}
 })
 local v12 = t1[7]:MakeTab({
 	"Configs",
