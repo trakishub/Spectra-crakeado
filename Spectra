@@ -16,7 +16,7 @@ local function v4(p1)
 end
 v4(LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait())
 LocalPlayer.CharacterAdded:Connect(v4)
-local v5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/djhehdhdjdjdjdbfb-sys/Spectra-tudo-obf/refs/heads/main/obfuscated_script-1784407255121.lua.txt"))()
+local v5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/BRENOPOOF/slapola/refs/heads/main/Main.txt"))()
 t1[7] = v5:MakeWindow({
 	Title = " Spectra HUB | Brookhaven RP 🏡",
 	SubTitle = "炎 by assure | version hub 3.7.0.8",
