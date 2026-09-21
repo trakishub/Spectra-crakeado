@@ -18,17 +18,17 @@ v4(LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait())
 LocalPlayer.CharacterAdded:Connect(v4)
 local v5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/BRENOPOOF/slapola/refs/heads/main/Main.txt"))()
 t1[7] = v5:MakeWindow({
-	Title = " Spectra HUB | Brookhaven RP 🏡",
-	SubTitle = "炎 by assure | version hub 3.7.0.8",
-	Logo = "rbxassetid://15464429993",
+	Title = " Trakis Hub | Brookhaven RP 🏡",
+	SubTitle = "炎 by: vitin | version hub v5",
+	Logo = "rbxassetid://82831701660755",
 	TitleSize = 18,
-	SaveFolder = "Spectra hub"
+	SaveFolder = "Trakis hub"
 })
 local v6 = t1[7]
 local uDim2 = UDim2.new(0, 40, 0, 40)
 local Fit = Enum.ScaleType.Fit
 local t2 = {
-	Image = "rbxassetid://116857504291644",
+	Image = "rbxassetid://82831701660755",
 	BackgroundTransparency = 0,
 	Size = uDim2,
 	ScaleType = Fit
@@ -42,13 +42,13 @@ AddMinimizeButton(v6, {
 	Corner = t3
 })
 t1[7]:Dialog({
-	Title = "Welcome to Spectra Hub",
-	Text = "Join our Discord to stay updated with news, updates, and community events!",
+	Title = "Welcome to Trakis Hub",
+	Text = "Ola tivemos problemas recentemente mais estamos tentando fazer o hub novamente ",
 	Options = {
 		{
 			"Discord",
 			function()
-    setclipboard("https://discord.gg/vsKDhkJf8D")
+    setclipboard("https://discord.gg/")
     Library:Notify(10709806740, "Discord link copied to clipboard!", 5)
 end
 		},
@@ -126,8 +126,8 @@ t1[14] = t1[7]:MakeTab({
 })
 v13:AddSection({ "Creditos do Hub" })
 v13:AddDiscordInvite({
-	Name = "trakis Hub",
-	Description = "VERSION SECRET",
+	Name = "Trakis Hub",
+	Description = "Ainda Não temos discord",
 	Logo = "rbxassetid://82831701660755",
 	Invite = ""
 })
