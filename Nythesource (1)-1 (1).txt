@@ -531,7 +531,7 @@ local allowedUsers = {
 	["alodozhynn"] = true,
 	["n9xgh"] = true,
 	["ADM_TROLLKKS"] = true,
-	["lIllIllIllIIIIllII"] = true
+	["Hey_zPUDIM"] = true
    ["meka_html"] = true
 }
 
